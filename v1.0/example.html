@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><{title}></title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h2>GMold!</h2>
+		OpenSource PHP Template engine v1.0
+		<hr>
+		<h4>Variable var</h4>
+			<{var}>
+		<hr>
+		<h4>Conditional Statement -> if-else-endif</h4>
+			<{if:ifistrue}>
+			Variable ifistrue is True<br>
+			<{else}>
+			Variable ifistrue is False<br>
+			<{endif}>
+		<hr>
+		<h4>Conditional Statement -> if-elseif-else-endif</h4>
+			<{if:ifvalueA}>
+				Variable ifvalueA is True<br>
+			<{elseif:ifvalueB}>
+				Variable ifvalueB is True<br>
+			<{else}>
+				Variable ifvalueA 和 ifvalueB 均is False<br>
+			<{endif}>
+		<hr>
+		<h4>Conditional Statement -> switch-case-endswitch</h4>
+			<{switch:switchval}>
+				Variable switchval neither A nor B<br>
+			<{case:'A'}>
+				Variable switchval not A<br>
+			<{case:'B'}>
+				Variable switchval not B<br>
+			<{endswitch}>
+		<hr>
+	</body>
+</html>
