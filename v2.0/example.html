@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><{title}></title>
+		<meta charset="utf-8">
+	</head>
+	<style>
+	html,body{
+		border:0px;
+		margin:0px;
+		padding:0px;
+		background-color:#e5e5e5;
+		color:#333;
+	}
+	h2{
+		width:90%;
+		padding:12px 5%;
+		background-color:#6c6;
+		margin:0px;
+		color:#fff;
+		text-align:center;
+	}
+	h3{
+		width:90%;
+		padding:12px 5%;
+		color:#666;
+		text-align:center;
+	}
+	h4{
+		padding-left:20px;
+		color:#709;
+	}
+	.btm{
+		width:90%;
+		padding:12px 5%;
+		background-color:#333;
+		margin:0px;
+		margin-top:20px;
+		color:#fff;
+		text-align:center;
+	}
+	</style>
+	<body>
+		<h2>GMold!</h2>
+		<h3>OpenSource PHP Template Engine v2.0</h3>
+		<hr>
+		<h4>Variable var</h4>
+			<{var}>
+		<hr>
+		<h4>Conditional Statement -> if-else-endif</h4>
+			<{if:ifistrue}>
+			Variable ifistrue is True<br>
+			<{else}>
+			Variable ifistrue is False<br>
+			<{endif}>
+		<hr>
+		<h4>Conditional Statement -> if-elseif-else-endif</h4>
+			<{if:ifvalueA}>
+				Variable ifvalueA is True<br>
+			<{elseif:ifvalueB}>
+				Variable ifvalueB is True<br>
+			<{else}>
+				Variable ifvalueA 和 ifvalueB 均is False<br>
+			<{endif}>
+		<hr>
+		<h4>Conditional Statement -> switch-case-endswitch</h4>
+			<{switch:switchval}>
+				Variable switchval neither A nor B<br>
+			<{case:'A'}>
+				Variable switchval is A<br>
+			<{case:'B'}>
+				Variable switchval is B<br>
+			<{endswitch}>
+		<hr>
+		<h4>Conditional Statement -> for[start-end]-endfor </h4>
+		<{for[0<4]}>
+			<{$i}> <{forvar.$i}><br>
+		<{endfor}>
+		<div class="btm">
+			© 2015 GMold By IWenKu.net
+		</div>
+	</body>
+</html>
